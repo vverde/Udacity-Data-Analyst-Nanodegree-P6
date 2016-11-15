@@ -32,8 +32,6 @@
               width = 1400 - margin,
               height = 600 - margin;
 
-          debugger;
-
           var svg = d3.select("body")
             .append("svg")
               .attr("width", width + margin)
@@ -55,19 +53,6 @@
             .append('g')
                 .attr('class','chart');
 
-          var svg4 = d3.select("body")
-            .append("svg")
-              .attr("width", width + margin)
-              .attr("height", height + margin)
-            .append('g')
-                .attr('class','chart');
-
-          var svg5 = d3.select("body")
-            .append("svg")
-              .attr("width", width + margin)
-              .attr("height", height + margin)
-            .append('g')
-                .attr('class','chart');
       /*
         Dimple.js Chart construction code
       */
@@ -109,7 +94,8 @@
     Use D3 (not dimple.js) to load the TSV file
     and pass the contents of it to the draw function
     */
-  d3.tsv("http://raw.githubusercontent.com/vverde/Udacity-Data-Analyst-Nanodegree-P6/master/titanic_data.tsv", draw);
+  /* d3.tsv("http://raw.githubusercontent.com/vverde/Udacity-Data-Analyst-Nanodegree-P6/master/titanic_data.tsv", draw); */
+  d3.tsv("titanic_data.tsv", draw);
   </script>
 </body>
 </html>
