@@ -80,6 +80,7 @@ Final visualization can be seen [here](http://rawgit.com/vverde/Udacity-Data-Ana
 - [Stackoverflow](http://stackoverflow.com/)
 	- [Tooltip custom text](http://stackoverflow.com/questions/38204790/dimple-tooltip-add-custom-text)
 	- [Number rounding](http://stackoverflow.com/questions/15762768/javascript-math-round-to-two-decimal-places)
+	- [Replacing SVG content](http://stackoverflow.com/questions/10784018/how-can-i-remove-or-replace-svg-content)
 	- and more on javascript
 - [Udacity forum](https://discussions.udacity.com/c/nd002-p6-data-visualization-with-d3-js)
 - [Mike Bostock’s Blocks](http://bl.ocks.org/mbostock)
