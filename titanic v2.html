@@ -96,10 +96,9 @@ h4 {
             new dimple.color("#44BB44"),
             new dimple.color("#BBBBBB")
           ]; 
-          /* Define axis */
+          /* Define axis and titles */
           var x = myChart.addCategoryAxis("x", "Gender");
           var y = myChart.addPctAxis("y","Survived");
-          /* Axis and titles */
           myChart.title = "12345";
           y.title = "Total passengers";
           /* Add legend */
@@ -240,6 +239,7 @@ h4 {
   <p>But the data tell us also that passengers in upper decks - the one reserved for rich passengers - had a higher survival rate, followed by passengers in second class</p> \
   <p>\"Women and children first. And then money\" was more appropriate in the Titanic case</p>";
 
+  /* Create the svg inside container */
   function set_svg() {
         "use strict";
         var margin = 75,
@@ -254,6 +254,7 @@ h4 {
           .attr("class","chart");
         }
 
+  /* Each onclick set the right content of svg, title and story */
   d3.select("#step1").on("click", function() {
        var svg = d3.select("svg").remove();
        set_svg()
@@ -291,7 +292,7 @@ h4 {
   step1.click()  
   </script>
   <footer>
-    <h3 style="text-align:right">Udacity Data Analist Nanodegree<br>Project 6: The sinking of the RMS Titanic<br>Amodiovalerio Verde</h3>
+    <h3 style="text-align:right">Udacity Data Analist Nanodegree<br>Project 6: Make Effective Data Visualization<br>Amodiovalerio Verde</h3>
   </footer>
 </body>
 </html>
